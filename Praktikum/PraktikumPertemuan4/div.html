@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 4 - Div(Division) CSS</title>
+    <style>
+      * {
+        background: lightblue;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        padding: 80px 0 0 0;
+      }
+
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 460px;
+        height: 420px;
+        background: linear-gradient(18deg, #5eb93a, #70c64e, #098115);
+        box-shadow: 4px 5px 14px rgb(0, 0, 0, 0.5);
+        border-radius: 16px;
+        gap: 10px;
+      }
+
+      .div-1,
+      .div-2,
+      .div-3,
+      .div-4,
+      .div-5,
+      .div-6 {
+        background: linear-gradient(18deg, #4c7ade, #30059b);
+        width: 60px;
+        height: 60px;
+        box-shadow: 3px 4px 6px rgb(0, 0, 0, 0.5);
+        border-radius: 8px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="container">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+        <div class="div-4"></div>
+        <div class="div-5"></div>
+        <div class="div-6"></div>
+      </div>
+    </section>
+  </body>
+</html>
