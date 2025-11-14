@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: linear-gradient(
+            to bottom right,
+            rgba(2, 2, 2, 0.991),
+            rgba(46, 28, 5, 0.562)
+          ),
+          url("images/gambarSunset3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid #c4a612;
+        border-radius: 15px;
+        margin: 160px 0 0 0;
+        padding: 10px 10px;
+        background: linear-gradient(16deg, #c4a612, #e48912);
+        width: 500px;
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.941);
+        position: relative;
+        z-index: -2;
+      }
+
+      .container h1 {
+        color: white;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .rect {
+        border-radius: 15px;
+        bottom: 10px;
+        padding: 26px 26px;
+        background: white;
+        position: absolute;
+        z-index: -1;
+      }
+
+      img {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Fitur akan segera hadir, Terimakasih.</h1>
+        <a href="UTS_241210033_nomor4.html"></a>
+        <span class="rect"></span>
+        <img src="images/clock.gif" alt="clock-gif" />
+      </div>
+    </section>
+  </body>
+</html>
