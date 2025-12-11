@@ -1,0 +1,39 @@
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-products .card img,
+.new-arrivals .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links{
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-links li {
+    margin-bottom: 10px;
+}
