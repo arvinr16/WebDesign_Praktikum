@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 6 - Web Design Interface Praktikum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#accordion").accordion();
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#tabs").tabs();
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="accordion">
+      <h3>Merk Mobil: Toyota</h3>
+      <div>
+        <p>
+          Toyota adalah perusahaan otomotif asal Jepang yang dikenal dengan
+          produksi mobil yang tahan lama, efisien, dan memiliki kualitas tinggi.
+          Toyota juga menjadi pelopor teknologi hybrid melalui lini Prius, serta
+          memiliki jaringan produksi dan pemasaran terbesar di dunia.
+        </p>
+      </div>
+      <h3>Merk Mobil: Mercedes-Benz</h3>
+      <div>
+        <p>
+          Mercedes-Benz merupakan salah satu merek mobil mewah tertua di dunia,
+          berasal dari Jerman. Perusahaan ini terkenal dengan standar kemewahan,
+          teknologi keselamatan, serta inovasi-inovasi canggih di segmen
+          kendaraan premium, termasuk lini AMG dan kendaraan listrik EQ.
+        </p>
+      </div>
+      <h3>Merk Mobil: Honda</h3>
+      <div>
+        <p>
+          Honda merupakan produsen mobil dan motor asal Jepang yang fokus pada
+          inovasi mesin, efisiensi bahan bakar, dan keandalan kendaraan. Honda
+          terkenal dengan teknologi VTEC dan model-model populer seperti Civic
+          dan CR-V yang banyak digunakan di berbagai negara.
+        </p>
+        <ul>
+          <li>Honda Civic Type-R</li>
+          <li>Honda Civic EG6</li>
+          <li>Honda Civic EK9</li>
+        </ul>
+      </div>
+      <h3>Merk Mobil: BMW</h3>
+      <div>
+        <p>
+          BMW adalah perusahaan otomotif asal Jerman yang dikenal sebagai
+          produsen mobil premium dengan fokus pada performa, kenyamanan, dan
+          teknologi modern. Seri BMW seperti 3 Series, 5 Series, dan X Series
+          menjadi ikon mobil mewah yang mengutamakan pengalaman berkendara
+          sporty.
+        </p>
+      </div>
+    </div>
+    <br />
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Nama</a></li>
+        <li><a href="#tabs-2">NIM</a></li>
+        <li><a href="#tabs-3">Kelas</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Paijo Dalijo</p>
+      </div>
+      <div id="tabs-2">
+        <p>241210777</p>
+      </div>
+      <div id="tabs-3">
+        <p>Kelas 777 12D</p>
+      </div>
+    </div>
+    <br />
+    <p>Menampilkan Tanggal: <input type="text" id="datepicker"></p>
+  </body>
+</html>
