@@ -1,0 +1,10 @@
+Praktikum WDI Pertemuan 7 - jQuery
+1. Auto complete: Digunakan untuk membuat searching bisa langsung-
+                  keluar input yang dicari dibawah tag input.
+2. Dialog box   : Digunakan untuk mengkonfirmasi keputusan user, -
+                  misal ketika user ingin menghapus data.
+3. jQuery menu  : Digunakan untuk membuat navigasi menu pada website kita.
+4. Tooltip      : Berfungsi untuk memberi penjelasan singkat ketika user -
+                  hover pada elemen websitenya.
+5. Control Group: Digunakan untuk mengelompokkan beberapa kontrol/ form-
+                  element menjadi satu group yang tampil rapi dan seragam.
