@@ -8,3 +8,8 @@ Praktikum WDI Pertemuan 7 - jQuery
                   hover pada elemen websitenya.
 5. Control Group: Digunakan untuk mengelompokkan beberapa kontrol/ form-
                   element menjadi satu group yang tampil rapi dan seragam.
+
+Tugas WDI : membuat formulir pendaftaran siswa, 
+membuat prodi auto complete semua prodi kampus, 
+terus tahun dari 2021 sampai 2026, 
+terus buat hobinya minimal 5
