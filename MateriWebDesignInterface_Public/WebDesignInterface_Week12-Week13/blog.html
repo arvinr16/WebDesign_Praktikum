@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - E-Commerce</title>
+    <!-- Link Import Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-light">
+    <!-- Navbar Section Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <a class="navbar-brand" href="#">E-Commerce</a>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <form class="d-flex ms-lg-4 my-3 my-lg-0 w-50 w-lg-50">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cari Produk atau Kategori disini yaa..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+    <!-- Header Section Start-->
+    <header class="py- bg-white border-bottom">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-8">
+            <h1 class="h3 fw-bold mb-2">Blog &amp; Inspirasi Belanja</h1>
+            <p class="text-muted mb-0">
+              Tips, review, dan panduan belanja online untuk membantumu memilih
+              produk terbaik.
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-md-end mb-1">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              </ol>
+            </nav>
+            <span
+              class="badge bg-primary-subtle text-primary border border-primary-subtle"
+            >
+              <i class="bi bi-journal-text me-1"></i> 120+ Artikel
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main class="py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar -->
+          <aside class="col-lg-3 mb-4 mb-lg-0">
+            <!-- Search in blog -->
+            <div class="card border-0 shadow-sm mb-3">
+              <div class="card-header bg-white">
+                <h2 class="h6 mb-0">Cari Artikel</h2>
+              </div>
+              <div class="card-body">
+                <form class="d-flex">
+                  <input
+                    type="search"
+                    class="form-control form-control-sm me-2"
+                    placeholder="Cari topik..."
+                    aria-label="Search blog"
+                  />
+                  <button class="btn btn-outline-primary" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Kategori Blog -->
+            <div class="card border-0 shadow-sm mb-3">
+              <div class="card-header bg-white">
+                <h2 class="h6 mb-0">Kategori</h2>
+              </div>
+              <div class="card-body">
+                <div class="list-group list-group-flush small">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action px-0 border-0 d-flex justify-content-between align-items-center"
+                  >
+                    Semua
+                    <span class="badge bg-light text-muted border">120</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action px-0 border-0 d-flex justify-content-between align-items-center"
+                  >
+                    Tips Belanja
+                    <span class="badge bg-light text-muted border">38</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action px-0 border-0 d-flex justify-content-between align-items-center"
+                  >
+                    Review Produk
+                    <span class="badge bg-light text-muted border">26</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action px-0 border-0 d-flex justify-content-between align-items-center"
+                  >
+                    Fashion &amp; Style
+                    <span class="badge bg-light text-muted border">22</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action px-0 border-0 d-flex justify-content-between align-items-center"
+                  >
+                    Gadget &amp; Tekno
+                    <span class="badge bg-light text-muted border">18</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action px-0 border-0 d-flex justify-content-between align-items-center"
+                  >
+                    Rumah &amp; Lifestyle
+                    <span class="badge bg-light text-muted border">16</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artikel Populer -->
+            <div class="card border-0 shadow-sm mb-3">
+              <div class="card-header bg-white">
+                <h2 class="h6 mb-0">Artikel Populer</h2>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled small mb-0">
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="fw-semibold text-decoration-none d-block text-dark"
+                    >
+                      7 Tips Belanja Online Aman &amp; Anti Penipuan
+                    </a>
+                    <span class="text-muted d-block"
+                      >12 Des 2025 • 4 menit baca</span
+                    >
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="fw-semibold text-decoration-none d-block text-dark"
+                    >
+                      Rekomendasi Smartphone di Bawah 3 Juta
+                    </a>
+                    <span class="text-muted d-block"
+                      >2 Des 2025 • 5 menit baca</span
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="fw-semibold text-decoration-none d-block text-dark"
+                    >
+                      Cara Memilih Ukuran Sepatu yang Pas Saat Belanja Online
+                    </a>
+                    <span class="text-muted d-block"
+                      >20 Nov 2025 • 6 menit baca</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-white">
+                <h2 class="h6 mb-0">Tag Populer</h2>
+              </div>
+              <div class="card-body">
+                <div class="d-flex flex-wrap gap-2 small">
+                  <a href="#" class="badge bg-light text-muted border">promo</a>
+                  <a href="#" class="badge bg-light text-muted border"
+                    >diskon</a
+                  >
+                  <a href="#" class="badge bg-light text-muted border"
+                    >review</a
+                  >
+                  <a href="#" class="badge bg-light text-muted border"
+                    >smartphone</a
+                  >
+                  <a href="#" class="badge bg-light text-muted border"
+                    >fashion</a
+                  >
+                  <a href="#" class="badge bg-light text-muted border"
+                    >tips belanja</a
+                  >
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Blog List -->
+          <section class="col-lg-9">
+            <!-- Top info -->
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3 gap-2"
+            >
+              <div>
+                <span class="small text-muted">Menampilkan:</span>
+                <span class="fw-semibold small">1–6</span>
+                <span class="small text-muted">dari 120 artikel</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="small text-muted">Urutkan:</span>
+                <select class="form-select form-select-sm w-auto">
+                  <option value="newest">Terbaru</option>
+                  <option value="popular">Paling populer</option>
+                  <option value="oldest">Terlama</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Featured post (optional) -->
+            <article class="card border-0 shadow-sm mb-4 blog-card-hover">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="ratio ratio-16x9 overflow-hidden rounded-start">
+                    <img
+                      src="https://i.pinimg.com/736x/41/11/6d/41116d46e8a0b93c707604f860ca88ae.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Tips belanja online aman"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100">
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                      <span
+                        class="badge bg-primary-subtle text-primary border border-primary-subtle small"
+                      >
+                        Tips Belanja
+                      </span>
+                      <span class="small text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 12 Des 2025
+                      </span>
+                      <span class="small text-muted">
+                        <i class="bi bi-clock me-1"></i> 4 menit baca
+                      </span>
+                    </div>
+                    <h2 class="h5 fw-bold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        7 Tips Belanja Online Aman &amp; Anti Penipuan
+                      </a>
+                    </h2>
+                    <p class="text-muted small mb-3">
+                      Belanja online makin mudah, tapi kamu tetap perlu waspada
+                      agar terhindar dari penipuan. Pelajari langkah praktis
+                      untuk memastikan toko, pembayaran, dan pengirimanmu aman.
+                    </p>
+                    <div
+                      class="mt-auto d-flex justify-content-between align-items-center"
+                    >
+                      <div class="small text-muted">
+                        Oleh <span class="fw-semibold">Tim MyShop</span>
+                      </div>
+                      <a
+                        href="#"
+                        class="small fw-semibold text-decoration-none"
+                      >
+                        Baca selengkapnya
+                        <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- List artikel lain (cards) -->
+            <div class="row g-3 g-md-4">
+              <!-- Post 1 -->
+              <div class="col-md-6">
+                <article class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="ratio ratio-16x9 overflow-hidden">
+                    <img
+                      src="https://i.pinimg.com/736x/ed/d0/b9/edd0b9b8f7585ce4ad4528293731a7d7.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Rekomendasi smartphone di bawah 3 juta"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 mb-2 small"
+                    >
+                      <span class="badge bg-light text-muted border"
+                        >Gadget &amp; Tekno</span
+                      >
+                      <span class="text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 2 Des 2025
+                      </span>
+                      <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i> 5 menit
+                      </span>
+                    </div>
+                    <h3 class="h6 fw-semibold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <img src="" />
+                        10 Rekomendasi Smartphone di Bawah 3 Juta Terbaik 2025
+                      </a>
+                    </h3>
+                    <p class="text-muted small mb-3">
+                      Budget terbatas bukan berarti nggak bisa upgrade HP. Ini
+                      dia pilihan smartphone dengan performa kencang, kamera
+                      oke, dan baterai awet di harga ramah kantong.
+                    </p>
+                    <a
+                      href="#"
+                      class="small fw-semibold text-decoration-none mt-auto"
+                    >
+                      Baca artikel <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Post 2 -->
+              <div class="col-md-6">
+                <article class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="ratio ratio-16x9 overflow-hidden">
+                    <img
+                      src="https://i.pinimg.com/1200x/92/7c/7a/927c7a2d16468133f3c72be9046102d4.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Panduan ukuran sepatu"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 mb-2 small"
+                    >
+                      <span class="badge bg-light text-muted border"
+                        >Fashion &amp; Style</span
+                      >
+                      <span class="text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 20 Nov 2025
+                      </span>
+                      <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i> 6 menit
+                      </span>
+                    </div>
+                    <h3 class="h6 fw-semibold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        Cara Memilih Ukuran Sepatu yang Pas Saat Belanja
+                        <img src="" Online />
+                      </a>
+                    </h3>
+                    <p class="text-muted small mb-3">
+                      Salah ukuran sepatu adalah drama klasik belanja online.
+                      Ikuti panduan lengkap ini untuk mengukur kaki, membaca
+                      size chart, dan menghindari ukuran yang meleset.
+                    </p>
+                    <a
+                      href="#"
+                      class="small fw-semibold text-decoration-none mt-auto"
+                    >
+                      Baca artikel <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Post 3 -->
+              <div class="col-md-6">
+                <article class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="ratio ratio-16x9 overflow-hidden">
+                    <img
+                      src="https://i.pinimg.com/736x/d6/6e/87/d66e87a6f5501f022c8bfd32260a3197.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Perbandingan wireless earbuds"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 mb-2 small"
+                    >
+                      <span class="badge bg-light text-muted border"
+                        >Review Produk</span
+                      >
+                      <span class="text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 10 Nov 2025
+                      </span>
+                      <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i> 7 menit
+                      </span>
+                    </div>
+                    <h3 class="h6 fw-semibold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        Battle Wireless Earbuds: Mana yang Paling Worth It?
+                      </a>
+                    </h3>
+                    <p class="text-muted small mb-3">
+                      Lagi bingung pilih TWS? Kita bandingkan beberapa model
+                      populer dari segi kualitas suara, kenyamanan, fitur, dan
+                      harga untuk bantu kamu menentukan pilihan.
+                    </p>
+                    <a
+                      href="#"
+                      class="small fw-semibold text-decoration-none mt-auto"
+                    >
+                      Baca artikel <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Post 4 -->
+              <div class="col-md-6">
+                <article class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="ratio ratio-16x9 overflow-hidden">
+                    <img
+                      src="https://i.pinimg.com/736x/8e/4f/7a/8e4f7ae03afed91895fefc1fc8e7e63e.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Dekorasi kamar minimalis"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 mb-2 small"
+                    >
+                      <span class="badge bg-light text-muted border"
+                        >Rumah &amp; Lifestyle</span
+                      >
+                      <span class="text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 5 Nov 2025
+                      </span>
+                      <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i> 5 menit
+                      </span>
+                    </div>
+                    <h3 class="h6 fw-semibold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        8 Ide Dekorasi Kamar Minimalis Biar Makin Nyaman
+                      </a>
+                    </h3>
+                    <p class="text-muted small mb-3">
+                      Dengan budget terbatas, kamu tetap bisa punya kamar yang
+                      cozy dan instagramable. Intip inspirasi dekorasi dan
+                      produk yang bisa langsung kamu checkout di MyShop.
+                    </p>
+                    <a
+                      href="#"
+                      class="small fw-semibold text-decoration-none mt-auto"
+                    >
+                      Baca artikel <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Post 5 -->
+              <div class="col-md-6">
+                <article class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="ratio ratio-16x9 overflow-hidden">
+                    <img
+                      src="https://i.pinimg.com/736x/8e/4f/7a/8e4f7ae03afed91895fefc1fc8e7e63e.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Panduan ukuran baju"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 mb-2 small"
+                    >
+                      <span class="badge bg-light text-muted border"
+                        >Fashion &amp; Style</span
+                      >
+                      <span class="text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 28 Okt 2025
+                      </span>
+                      <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i> 6 menit
+                      </span>
+                    </div>
+                    <h3 class="h6 fw-semibold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        Panduan Membaca Size Chart Baju Wanita &amp; Pria
+                      </a>
+                    </h3>
+                    <p class="text-muted small mb-3">
+                      Setiap brand punya standar ukuran yang berbeda. Pelajari
+                      cara membaca size chart dan tips memilih ukuran yang pas
+                      untuk tubuhmu.
+                    </p>
+                    <a
+                      href="#"
+                      class="small fw-semibold text-decoration-none mt-auto"
+                    >
+                      Baca artikel <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Post 6 -->
+              <div class="col-md-6">
+                <article class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="ratio ratio-16x9 overflow-hidden">
+                    <img
+                      src="https://i.pinimg.com/736x/cc/dd/33/ccdd33596ccf06cc93ad3fce22399528.jpg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Tips memanfaatkan flash sale"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div
+                      class="d-flex flex-wrap align-items-center gap-2 mb-2 small"
+                    >
+                      <span class="badge bg-light text-muted border"
+                        >Promo &amp; Diskon</span
+                      >
+                      <span class="text-muted">
+                        <i class="bi bi-calendar3 me-1"></i> 15 Okt 2025
+                      </span>
+                      <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i> 4 menit
+                      </span>
+                    </div>
+                    <h3 class="h6 fw-semibold mb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        Tips Dapetin Barang Incaran Saat Flash Sale
+                      </a>
+                    </h3>
+                    <p class="text-muted small mb-3">
+                      Flash sale sering bikin geregetan karena barang cepat
+                      habis. Simak trik sederhana supaya kamu lebih siap dan
+                      nggak ketinggalan promo.
+                    </p>
+                    <a
+                      href="#"
+                      class="small fw-semibold text-decoration-none mt-auto"
+                    >
+                      Baca artikel <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-4" aria-label="Blog pagination">
+              <ul class="pagination pagination-sm justify-content-end">
+                <li class="page-item disabled">
+                  <span class="page-link">Previous</span>
+                </li>
+                <li class="page-item active">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">CONTACT INFO</h5>
+            <p class="mb-1">
+              <strong>ADDRESS:</strong> 123 Street Name, City, Konoha
+            </p>
+            <p class="mb-1"><strong>PHONE:</strong> (123) 456-7890</p>
+            <p class="mb-1"><strong>EMAIL:</strong> mail@example.com</p>
+            <p class="mb-1">
+              <strong>WORKING DAYS/HOURS:</strong> Mon - Sun / 9:00 AM - 5:00 PM
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Customer Service -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">CUSTOMER SERVICE</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Help & FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Order Tracking</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Shipping & Delivery</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Orders History</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Advanced Search</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >My Account</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Corporate Sales</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Popular Tags -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">POPULAR TAGS</h5>
+            <div class="d-flex flex-wrap">
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Bag</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Black</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Blue</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Clothes</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Fashion</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Hub</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Shirt</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Shoes</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Skirt</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Sports</a
+              >
+              <a href="#" class="badge bg-secondary text-white me-2 mb-2"
+                >Sweater</a
+              >
+            </div>
+          </div>
+          <!-- Subscribe Newsletter -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">SUBSCRIBE NEWSLETTER</h5>
+            <p>
+              Get all the latest information on events, sales and offers. Sign
+              up for newsletter:
+            </p>
+            <form>
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email address"
+                  aria-label="Email address"
+                />
+                <button class="btn btn-primary" type="submit">SUBSCRIBE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="bg-secondary" />
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0">© Porto eCommerce. 2025. All Rights Reserved</p>
+          <div>
+            <i class="fab fa-cc-visa fa-2x text-white me-3"></i>
+            <i class="fab fa-cc-paypal fa-2x text-white me-3"></i>
+            <i class="fab fa-cc-stripe fa-2x text-white me-3"></i>
+            <i class="fas fa-shield-alt fa-2x text-white"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Bootstrap JS (via npm) -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
