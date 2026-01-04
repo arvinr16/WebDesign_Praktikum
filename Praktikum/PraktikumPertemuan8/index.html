@@ -1,153 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tugas Praktikum Pertemuan 8</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Overlay -->
-    <section id="overlay"></section>
-    <!-- Header -->
-    <header class="container">
-      <div class="wrapper">
-        <nav class="navbar">
-          <!-- Logo -->
-          <div class="navbar-logo">
-            <p>SI Digital Learning</p>
-          </div>
-          <!-- Links -->
-          <ul class="navbar-links">
-            <li class="navbar-links"><a href="#">Beranda</a></li>
-            <li class="navbar-links"><a href="#">Tentang</a></li>
-            <li class="navbar-links"><a href="#">Feature</a></li>
-            <a href="#contact" class="navbar-btn">Contact</a>
-          </ul>
-          <!-- Icon yang digunakan -->
-          <div class="navbar-ham">
-            <div class="navbar-icon"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SI Digital Learning</title>
 
-    <!-- Banner/ Carousel -->
-    <section id="banner">
-      <div class="container">
-        <div class="banner-img">
-          <img src="" alt="" />
-        </div>
-        <div class="banner-desc">
-          <h4 class="banner-tag">Welcome</h4>
-          <h1 class="banner-title">SI Digital Learning</h1>
-          <p class="banner-detail">
-            Selamat Datang di Situs Website SI Digital Learning
-          </p>
-          <div class="banner-btn">
-            <a href="#contact">Belajar Disini</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Domine&family=Red+Hat+Display&display=swap" rel="stylesheet">
 
-    <!-- What is Digital Learning -->
-    <section id="whatis">
-      <div class="container">
-        <div class="whatis-img">
-          <img src="" alt="" />
-        </div>
-        <div class="whatis-desc">
-          <h4 class="section-tag">Apa itu SI Digital Learning?</h4>
-          <h3 class="section-title">Digital Learning</h3>
-          <p class="section-detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            vitae officia facilis debitis exercitationem modi quaerat, deserunt
-            at, doloremque a explicabo quasi atque accusantium blanditiis vero
-            nam repellat consequuntur sunt totam est eveniet vel itaque
-            sapiente? Dolor magnam cum nostrum! Quia deleniti illo enim
-            quibusdam eos delectus iste eligendi voluptas.
-          </p>
-          <div class="whatis-btn">
-            <a href="#symptoms">Lebih Detail</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Featured -->
-    <section id="featured" class="pt">
-      <div class="container">
-        <div class="wrapper">
-          <div class="section-heading">
-            <h4 class="section-tag">SI Digital Learning</h4>
-            <h3 class="section-title">Featured</h3>
-            <p class="section-detail">Featured dari SI Digital Learning</p>
-          </div>
-          <div class="featured-cards">
-            <!-- Card 1 -->
-            <div class="featured-card">
-              <img src="" alt="" />
-              <h2>Featured 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                veritatis.
-              </p>
-            </div>
-            <!-- Card 2 -->
-            <div class="featured-card">
-              <img src="" alt="" />
-              <h2>Featured 2</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                culpa?
-              </p>
-            </div>
-            <!-- Card 3 -->
-            <div class="featured-card">
-              <img src="" alt="" />
-              <h2>Featured 3</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                iusto.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<header class="header">
+  <div class="container nav-wrapper">
 
-    <!-- Contact -->
-     <section id="contact" class="pt">
-      <div class="container">
-        <div class="wrapper">
-          <div class="contact-title">
-            <h1>Ada Pertanyaan? Jika iya mohon kirim email Anda ke kami yaa</h1>
-          </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Masukkan Email Anda...">
-            <button>Send</button>
-          </form>
-        </div>
-      </div>
-     </section>
+    <div class="logo">SI Digital Learning</div>
 
-     <!-- Footer -->
-      <footer class="pt">
-        <div class="container">
-          <div class="wrapper">
-            <div class="footer-top"></div>
-            <div class="footer-bottom">
-              <p>Created with Love by Web Design Information System</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-  </body>
+    <nav class="nav" id="navMenu">
+      <a href="#">Beranda</a>
+      <a href="#">Tentang</a>
+      <a href="#">Fitur</a>
+      <a href="#contact" class="btn-outline">Kontak</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+      ☰
+    </button>
+
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h4>Welcome</h4>
+    <h1>SI Digital Learning</h1>
+    <p>Selamat Datang di Situs Website SI Digital Learning</p>
+    <button class="btn-primary">Belajar Disini</button>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container text-center">
+    <h4 class="section-tag">Apa itu?</h4>
+    <h2 class="section-title">Digital Learning</h2>
+    <p class="section-desc">
+      Digital Learning adalah metode pembelajaran berbasis teknologi digital
+      yang memungkinkan akses belajar kapan saja dan di mana saja.
+    </p>
+  </div>
+</section>
+
+<section class="section bg-light" id="contact">
+  <div class="container text-center">
+    <h2>Jika ada pertanyaan, kirim email Anda</h2>
+
+    <form class="contact-form">
+      <input type="email" placeholder="Masukkan Email Anda" required>
+      <button type="submit" class="btn-primary">Kirim</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Created with Love by Web Design Information System</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
 </html>
