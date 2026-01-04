@@ -384,5 +384,188 @@ header {
 }
 
 .featured-card:before {
-    content: "";/*lanjut disini*/
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border-end-start-radius: 10px;
+  border-end-end-radius: 10px;
+  transition: var(--smooth);
+}
+
+.featured-card:hover:before {
+  background: var(--orange);
+  transition: var(--smooth);
+}
+
+.featured-card img {
+  max-width: 270px;
+}
+
+.featured-card h2 {
+  padding-top: 55px;
+  font-size: 2.25rem;
+  font-family: "Domine", serif;
+  color: var(--green);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.featured-card p {
+  font-family: "Domine", serif;
+  font-size: 1.125rem;
+  color: var(--gray);
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 380px;
+  margin: 0 auto;
+  padding-top: 13px;
+}
+
+@media (min-width: 62rem) {
+  .featured-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .featured-cards:before {
+    content: "";
+    position: absolute;
+    bottom: -55%;
+    left: -9%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Contact */
+.contact-title h1 {
+  font-family: "Domine", serif;
+  font-size: 2.75rem;
+  color: var(--green);
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form input {
+  font-family: "Domine", serif;
+  font-size: 1.375rem;
+  margin-top: 60px;
+  max-width: 800px;
+  width: 90%;
+  height: 114px;
+  padding: 15px 15px 15px 35px;
+  border-radius: 200px;
+  box-shadow: var(--shadow);
+  border: none;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form button {
+  font-size: 1.5rem;
+  margin-top: 60px;
+}
+
+@media (min-width: 62rem) {
+  .contact-title h1 {
+    font-size: 3.375rem;
+  }
+
+  .contact-form {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contact-form input {
+    width: 100%;
+  }
+
+  .contact-form button {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    transform: translate(-2%, -20%);
+  }
+}
+
+/* Footer */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.footer-link {
+  list-style: none;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer-link:first-child {
+  margin-top: 20%;
+}
+
+.footer-link a {
+  font-family: "Domine", serif;
+  font-size: 1.375rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--green);
+  transition: var(--smooth);
+}
+
+.footer-link a:hover {
+  color: var(--orange);
+  transition: var(--smooth);
+}
+
+.footer-bottom p {
+  font-family: "Domine", serif;
+  font-size: 1.125rem;
+  width: 95%;
+  margin: 5% auto;
+  text-align: center;
+  color: var(--gray);
+}
+
+@media (min-width: 62rem) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    display: flex;
+  }
+
+  .footer-link {
+    margin: 0 15px;
+  }
+
+  .footer-link:first-child {
+    margin-top: 0;
+  }
 }
